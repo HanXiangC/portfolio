@@ -17,7 +17,7 @@ class CanvasBody extends Component {
 
   render() {
 
-    /* Prepares Canvas sizes */ 
+    /* Prepares Canvas sizes */
     const setCanvasDimensions = () => {
       const canvasW = window.innerWidth;
       const canvasH = window.innerHeight;
