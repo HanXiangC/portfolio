@@ -32,8 +32,8 @@ class GameEngine extends Component {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         //console.log(ctx);
-        ctx.font = "80px Arial";
-        ctx.fillText(a,10,50);
+        ctx.font = canvas.width* 0.01 + "px Arial";
+        ctx.fillText(a,canvas.width * 0.1,canvas.height * 0.4);
         //console.log(a);
       }
     }

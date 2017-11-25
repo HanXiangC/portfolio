@@ -1,0 +1,14 @@
+.mainNavBar{
+  border:1px solid black;
+  width: 99%;
+  margin-top: 1%;
+  margin-bottom:1%;
+  margin-left: 0.3%;
+}
+
+.navButton{
+  display:inline-block;
+  margin-right: 5%;
+  font: 30px Arial;
+
+}

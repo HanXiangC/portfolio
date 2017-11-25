@@ -6,6 +6,7 @@ Created rudimentary navigation system
 Integrated game engine for Ants
 Figured out loading screen (Index.html)
 Created bases for sitePages
+Created responsive navbar and canvas screen for Ants
 
 ToDo:
 

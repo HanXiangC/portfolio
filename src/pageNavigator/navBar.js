@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 
+import './navBar.css';
+
 class NavBar extends Component {
 
   constructor(props){
@@ -8,7 +10,7 @@ class NavBar extends Component {
     this.state = {
     }
   }
-  
+
   render() {
 
     const linkToHome = () => {

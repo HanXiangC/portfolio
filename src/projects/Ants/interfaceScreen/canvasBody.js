@@ -20,7 +20,7 @@ class CanvasBody extends Component {
     /* Prepares Canvas sizes */
     const setCanvasDimensions = () => {
       const canvasW = window.innerWidth;
-      const canvasH = window.innerHeight;
+      const canvasH = (canvasW/16) * 7;
       return [canvasW, canvasH];
     }
     /* ------ */
@@ -28,7 +28,7 @@ class CanvasBody extends Component {
     return (
 
       <div className="gameBlock">
-        <canvas id = "myGameBoard" width = {setCanvasDimensions()[0] * 0.98} height = {setCanvasDimensions()[1] * 0.98}></canvas>
+        <canvas id = "myGameBoard" width = {setCanvasDimensions()[0]} height = {setCanvasDimensions()[1]}></canvas>
         <GameEngine/>
       </div>
     );

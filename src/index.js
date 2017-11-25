@@ -10,6 +10,7 @@ import Home from './sitePages/Home';
 import Projects from './sitePages/Projects';
 import About from './sitePages/About';
 import Contact from './sitePages/Contact';
+import Footer from './sitePages/Footer';
 
 import registerServiceWorker from './sitePages/registerServiceWorker';
 
@@ -23,24 +24,26 @@ ReactDOM.render((
 
           <NavBar/>
           <Home/>
+          <Footer/>
         </div>
       )}/>
       <Route path="/projects" render = {() => (
         <div>
           <NavBar/>
           <Ants/>
+          <Footer/>
         </div>
       )}/>
       <Route path="/about" render = {() => (
         <div>
           <NavBar/>
-
+          <Footer/>
         </div>
       )}/>
       <Route path="/contact" render = {() => (
         <div>
           <NavBar/>
-          <Ants/>
+          <Footer/>
         </div>
       )}/>
     </Switch>
