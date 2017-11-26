@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import WorldSeed from "../worldController/worldSeed.js";
+
+import UtilitiesInit from "../interfaceUtilities/utilitiesController.js";
 /*
 
 Name: gameEngine.js
@@ -16,6 +19,7 @@ class GameEngine extends Component {
 
     /* Useful Global Vars */
     var assets = [];
+
     var frame = 0;
     var gameRunning = true;
     var a = 0;
@@ -29,14 +33,28 @@ class GameEngine extends Component {
         a += 1;
 
         var ctx = canvas.getContext("2d");
+        var foodAssets = WorldSeed(ctx);
+        var utilities = UtilitiesInit(canvas, ctx);
+
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         //console.log(ctx);
-        ctx.font = canvas.width* 0.01 + "px Arial";
-        ctx.fillText(a,canvas.width * 0.1,canvas.height * 0.4);
-        //console.log(a);
+
+        for(var i=0; i < utilities.length; i++){
+            console.log(utilities);
+            utilities[i].render(a);
+        }
+
+
+        for(var i=0; i < foodAssets.length; i++){
+            console.log(foodAssets);
+            foodAssets[i].render();
+        }
       }
     }
+
+
+
     /* ------ */
 
     /* Game Engine loop */

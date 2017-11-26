@@ -7,6 +7,9 @@ Integrated game engine for Ants
 Figured out loading screen (Index.html)
 Created bases for sitePages
 Created responsive navbar and canvas screen for Ants
+Created and placed rudimentary timer + ingame object
+Figured out basis for ingame objects and placements
+
 
 ToDo:
 
