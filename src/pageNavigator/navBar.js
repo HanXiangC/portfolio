@@ -3,6 +3,15 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 
 import './navBar.css';
 
+/*
+
+Name: navBar.js
+Dependencies: index.js
+Description:
+Our top-level navigation bar.
+
+*/
+
 class NavBar extends Component {
 
   constructor(props){

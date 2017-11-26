@@ -1,4 +1,11 @@
+/*
 
+Name: BasicFoodNode.js
+Dependencies: worldSeed.js
+Description:
+This is the basic food resource node, containing all of its properties and functions.
+
+*/
 
 export default class BasicFoodNode {
 
